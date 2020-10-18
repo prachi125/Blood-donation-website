@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donar Request Form</title>
+	<script type="text/javascript" src="blood.js"></script>
+    
+	<style type="text/css">
+		input[type=text],[type=number],[type=email],[type=age],textarea,select
+{
+	border-radius: 5px;
+	border-color: green;
+}
+input[type=submit]
+{
+	background-color: RED;
+	border-radius: 50%;
+        padding:10px 70px;
+        cursor:pointer;
+        font-size:30px;
+}
+body
+{
+	background:url(red.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;  
+        background-size:cover;
+}
+input:hover[type=submit]
+{
+	background-color: cyan;
+	color: goldenrod;
+}
+h3:hover
+{
+	background-color: #669911;
+	transition: 0.4;
+}
+form
+{
+	font-size: 16px;
+	background-color: white;
+	padding-left: 20px;
+	opacity: .9;
+	text-align: center;
+	color: black;
+	margin-right: 30%;
+	margin-left: 30%;
+	border:1px solid silver;
+	border-radius: 5px;
+}
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li
+{
+	float: right;
+}
+li a
+{
+	display: block;
+	color: black;
+	padding: 14px 16px;
+	
+}
+li a:hover
+{
+	background-color: green;
+	color: red;
+	border-radius: 4px;
+	border-color: gold;
+}
+	</style>
+	
+</head>
+<body>
+    <ul>
+    	<li><a href="final project.html">Home</a></li>
+    	<li><a href="About.html">About</a></li>
+    </ul>
+    <form>
+    	<h3>Blood Donor Request Form</h3><br><br>
+    	<label>PatientName:</label><br>            
+    		<input type="text" name="name" placeholder="John" class="t1" required><br><br>
+    	<label>PatientBloodGroup:</label><br>
+    	     <select name="group" required id="bg">
+    		 <option value="1" selected></option>
+    		 <option value="A+">A+</option>
+			 <option value="A-">A-</option>
+			 <option value="B+">B+</option>
+		 	 <option value="B-">B-</option>
+			 <option value="AB+">AB+</option>
+			 <option value="AB-">AB-</option>
+			 <option value="O+">O+</option>
+			 <option value="O-">O</option>
+    	     </select><br><br>
+    	<label>Patient Age:</label><br>
+    	<input type="text" name="age" placeholder="age" id="age"><br><br>
+    	<label>Gender:</label><br>
+    	<input type="radio" name="male" checked>Male
+    	<input type="radio" name="female" >Female <br><br>
+    	<label>Mobile Number:</label><br>
+    	<input type="Mobilenumber" name="no" placeholder="Enter your Mobilenumber"
+    	 id="mobile"><br><br>
+    	<label>E-Mail:</label><br>
+    	<input type="email" name="email" placeholder="valid email" required  ><br><br>
+    	<label>Purpose of Blood:</label><br>
+    	<textarea rows="4" cols="40" placeholder="description..." class="t1" required></textarea><br><br>
+    	<label>Hospital Name:</label><br>
+    	<input type="text" name="Hospitalname" class="t1" required><br><br>
+    	<label>Address:</label><br>
+    	<textarea rows="4" cols="40" placeholder="validaddress" class="t1" required></textarea><br><br>
+    	<input type="submit" name="submit" value="submit" onclick="demo()"><br>
+    </form>
+</body>
+</html>

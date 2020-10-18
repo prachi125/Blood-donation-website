@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head><title>feedback</title>
+
+<script type="text/javascript" src="valid.js"></script>
+
+
+
+<style>
+
+body
+{
+background-image:url("blood.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+td
+{ 
+padding:12px;
+font-size:20px;
+text-align:centre;
+}
+
+#b
+{
+font-size:25px;
+color:blue;
+text-family:TIMES NEW ROMAN;
+padding:15px
+}
+
+table
+{
+	background-color: white;
+	padding right: 20px;
+	opacity: .8;
+	color: black;
+        margin: 5% 30% 5% 30%;
+	border:1px solid silver;
+	border-radius: 5px;
+}
+
+input[type=submit]
+{
+	background-color: RED;
+        border:none;
+	border-radius: 50%;
+        padding:10px 70px;
+        cursor:pointer;
+        float:center;
+        font-size:30px;
+        font-family:cursive;
+}
+
+a
+{
+        float:right;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	
+}
+
+a:hover
+{
+	background-color: green;
+	color: red;
+	border-radius: 4px;
+	border-color: gold;
+}
+
+</style>
+
+</head>
+
+<body >
+
+<a href="final project.html">Home</a>
+
+<form >
+<table>
+
+<tr>
+<th colspan="2" id="b">FEEDBACK</th>
+</tr>
+
+
+<tr>
+<td> Name:</td>
+<td><input type="text" id="1" placeholder="name" required></td>
+</tr>
+
+<tr>
+<td>E-mail:</td>
+<td><input type="text" id="2" placeholder="email" required></td>
+</tr>
+
+<tr>
+<td>Mobile number:</td>
+<td><input type="text" id="3"  required></td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td><input type="radio" value="M" name="gender">MALE<br>
+<input type="radio" value="F" name="gender">FEMALE<br> 
+<input type="radio" value="Female" name="gender">OTHER </td>
+</tr>
+
+
+<tr>
+<td>Location:</td>
+<td><input type="text" id="4" required></td>
+</tr>
+
+<tr>
+<td>Occupation:</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Feedback/Suggestion:</td>
+<td><textarea rows="10" cols="40" placeholder="comment" id="5" required></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2"><input type="submit" value="submit" onclick="validate()"></td>
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>

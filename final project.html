@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>project1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+  <style type="text/css">
+
+    #navigation{
+      background-color:tomato-red;
+    }
+    #navigation a{
+      display: inline-block;
+      padding: 12px 13px;
+      text-decoration: none;
+      color: black;
+    }
+    #navigation a:hover{
+      color: red;
+
+    }
+
+  </style>
+
+    
+</head>
+<body style="background-image: url(bodyimg.jpg);background-position:center;background-repeat: no-repeat; background-attachment: fixed;">
+<div>
+  <a href="project1.html"><img src="headlogo.png" height="100px" width="100px"></a><pre style="font-size: 300%; float: right; color:brown;"><b>BloodDonationCamp</b></pre>
+</div>
+<div id="navigation">
+  <a href="project1.html">Home</a>
+  <a href="blood donation facts.html">Facts</a>
+  <a href="PROJECT.html">Find blood donor</a>
+  <a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwiWuoWy56XaAhUM448KHQPTAbQQFghSMAI&url=http%3A%2F%2Fcdsco.nic.in%2Fwritereaddata%2FnewBLOOD%2520BANKS%2520INDIA%2520(4).pdf&usg=AOvVaw0EqzvRc3gGDWOvukuKsNY-">Blood Banks</a>
+  <a href="Blood.html">Make Request</a>
+  <a href="group.html">Group team</a>
+  <a href="About.html">About</a>
+  <a href="doclog.html">Login</a>
+  <a href="feedback.html">Feedback</a>
+
+</div>
+<form style="text-align:center; border-top:1px solid red;background-color: #fff;opacity: .9;padding: 30px;">
+
+            <p><b>FIND BLOOD DONORS</b></p>
+                       <p><pre><b>Blood Group</b>       <select name="Blood Group" style="width: 160px;" id="bg">
+    <option >Select blood group</option>
+    <option >A+</option>
+    <option >A-</option>
+    <option >B+</option>
+    <option >B-</option>
+    <option >O+</option>
+    <option >O-</option>
+    <option >AB+</option>
+    <option >AB-</option>
+  </select></pre></p>
+                        <p><pre><b>Select Country</b>    <select name="country" style="width: 160px;"id="c">
+    <option >Select country</option>
+    <option value="India">India</option>
+    <option value="Nepal" >Nepal</option>
+
+  </select></pre></p>
+                        <p><pre><b>Select State</b>      <select name="state" style="width: 160px;"  onclick="fun()" id="s">
+    <option> Select state</option>
+    <option id="s1"></option>
+    <option id="s2"></option>
+
+  </select></pre></p>
+                        <p><pre><b>Select District</b>   <select name="district" style="width: 160px;" onclick="fun1()" id="d">
+                          <option> Select district</option>
+    <option id="d1"></option>
+    <option id="d2"></option>
+  </select></pre></p>
+                        <p><pre><b>Select City</b>       <select name="cars" style="width: 160px;" onclick="fun2()" id="city">
+                          <option> Select city</option>
+    <option id="c1"></option>
+    <option id="c2"></option>
+  </select></pre></p>
+                        <p><input type="button" name="submit" value="Submit" onclick="fun3()"></p>
+                        
+</form>
+<a href="register.html" style="display: block;text-decoration: none;color: black;border-bottom: none;background-color: #fff;opacity: .9;padding: 20px;"><h2 style="text-align: center; height: 138px;">WISH TO DONATE BLOOD<br>REGISTER AS<br>VOLUNTARY BLOOD DONOR</h2></a>
+
+
+  <div style="text-align: center; margin-top: 2%;">
+    <p>Copyrights &copyAbdullah</p>
+  </div>
+
+
+</body>
+</html>
